@@ -3,9 +3,11 @@ import { Row, Col} from 'react-bootstrap'
 import Product from '../components/Product'
 import axios from 'axios'
 
+//when homescreen loads fetch products from backend
 const HomeScreen = () => {
     const [products, setProducts] = useState([])
 
+    
     useEffect(() => {
     const fetchProducts = async () => {
         const {data} = await axios.get('/api/products')

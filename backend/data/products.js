@@ -79,4 +79,4 @@ const products = [
   },
 ]
 
-module.exports = products //changed to module.export whch is common JS instead of ES6 module i.e export default products
+export default products 
